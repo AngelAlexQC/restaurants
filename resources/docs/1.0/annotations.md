@@ -14,11 +14,11 @@ Execute this commands out of this project folder.
 ```bash
 curl -s https://laravel.build/restaurants | bash
 cd restaurants && ./vendor/bin/sail up -d
-composer require binarytorch/larecipe
-php artisan larecipe:install
-composer require laravel/jetstream
-php artisan jetstream:install livewire --teams
-npm install && npm run dev
+./vendor/bin/sail composer require binarytorch/larecipe
+./vendor/bin/sail artisan larecipe:install
+./vendor/bin/sail composer require laravel/jetstream
+./vendor/bin/sail artisan jetstream:install livewire --teams
+./vendor/bin/sail npm install && npm run dev
 ./vendor/bin/sail artisan migrate:fresh --seed
-php artisan vendor:publish --tag=jetstream-views
+./vendor/bin/sail artisan vendor:publish --tag=jetstream-views
 ```
